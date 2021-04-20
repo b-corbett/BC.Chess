@@ -1,0 +1,131 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    /*background-color: #b1b1b1;*/
+    background-size: cover;
+}
+
+.out-piece-display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    left: 61%;
+}
+#black-display {
+    top: 8%;
+}
+#white-display {
+    top: 71%;
+}
+.out-piece {
+    position: relative;
+    width: 18%;
+    height: 25%;
+    margin: 0 -7% 0 0;
+}
+
+.point-counter {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    height: 100px;
+    width: 120px;
+    left: 61%;
+    font-size: 4em;
+    padding-left: 10px;
+}
+#white-counter {
+    top: 29.1%;
+}
+#black-counter {
+    top: 60.5%;
+}
+
+.chessBoard {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 5px solid black;
+    height: auto;
+    width: auto;
+    width: 810px;
+    height: 810px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+}
+
+.white {
+    background: white;
+}
+.black {
+    background: #b9b9b9;
+}
+
+.piece {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+}
+
+button {
+    position: absolute;
+    border-radius: 15px;
+    height: 35px;
+    width: 150px;
+    outline: none;
+}
+#flip-board {
+    top: 10%;
+    left: 5%;
+}
+#new_game {
+    top: 5%;
+    left: 5%;
+}
+
+#backg-selector-div {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+#backg-selector {
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 35px;
+    width: 150px;
+    padding: 0 0 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+#go-arrows {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    margin: auto 0 auto 0;
+}
+

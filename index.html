@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chess!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="backg-selector-div">
+        <select name="backg-selector" id="backg-selector">
+            <option value="wood">Wood</option>
+            <option value="marble">Marble</option>
+            <option value="chess">Chess</option>
+            <option value="space">Space</option>
+            <option value="underwater">Underwater</option>
+        </select>
+        <img id="go-arrows" src="./PhotoAssets/go-arrows.png" />
+    </div>
+    <button id="new_game" class="newGame">New Game</button>
+    <button id="flip-board" class="flipBoard">Flip Board</button>
+    <div id="chess-board" class="chessBoard"></div>
+    <div class="out-piece-display" id="black-display"></div>
+    <div class="point-counter" id="black-counter"></div>
+    <div class="out-piece-display" id="white-display"></div>
+    <div class="point-counter" id="white-counter"></div>
+
+    <script src="./JavaScript/helpers.js" type="text/javascript"></script>
+    <script src="./JavaScript/Global.js" type="text/javascript"></script>
+    <script src="./JavaScript/Board.js" type="text/javascript"></script>
+    <script src="./JavaScript/Square.js" type="text/javascript"></script>
+    <script src="./JavaScript/Piece.js" type="text/javascript"></script>
+    <script src="./JavaScript/script.js" type="text/javascript"></script>
+</body>
+
+</html>
